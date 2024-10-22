@@ -104,6 +104,25 @@ section {
 body {
   line-height: 1;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  padding: 20px 0; /* Add padding for top and bottom spacing */
+}
+
+#header {
+  padding-top: 50px; /* Increase this value to move content down */
+}
+
+body {
+  padding-bottom: 50px; /* Add bottom padding to balance the space */
+}
+
+
+
 ol,
 ul {
   list-style: none;
@@ -1146,6 +1165,7 @@ body.is-preload #bg:before {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  height:auto;
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1189,6 +1209,16 @@ body.is-preload #bg:before {
   position: relative;
   margin-top: 3.5rem;
 }
+
+
+#header:before, #header:after, #header > *:before, #header > *:after {
+  display: none !important;
+}
+
+
+
+
+
 #header > *:before {
   content: "";
   display: block;
@@ -1260,8 +1290,13 @@ body.is-preload #bg:before {
   border-radius: 4px;
 }
 #header nav ul li {
+  border:solid 1px #ffffff;
+  border-radius: 4px;
   padding-left: 0;
   border-left: solid 1px #ffffff;
+}
+#header nav ul li:nth-child(5) {
+  border-left: 0 !important; /* Ensure no left border */
 }
 #header nav ul li:first-child {
   border-left: 0;
