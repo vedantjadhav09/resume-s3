@@ -110,15 +110,15 @@ body {
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
   min-height: 100vh; /* Ensure it takes full viewport height */
-  padding: 20px 0; /* Add padding for top and bottom spacing */
+  padding: 0px 0; /* Add padding for top and bottom spacing */
 }
 
 #header {
-  padding-top: 50px; /* Increase this value to move content down */
+  padding-top: 30px; /* Increase this value to move content down */
 }
 
 body {
-  padding-bottom: 50px; /* Add bottom padding to balance the space */
+  padding-bottom: 0px; /* Add bottom padding to balance the space */
 }
 
 
