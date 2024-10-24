@@ -164,6 +164,12 @@
                     </div>
                     <div class="project">
                         <h3>WordPress Deployment on AWS</h3>
+                        <p>Tools: VPC, EC2, Internet Gateway (IGW), NAT Gateway, Auto Scaling Group, Application Load Balancer (ALB), Bastion Host, Security Groups, SCP, SSH<br><br>
+                            Designed and implemented a scalable, secure, and highly available architecture using AWS services, ensuring efficient resource management, network security, and fault tolerance. Configured a VPC with 2 public and 2 private subnets across 2 availability zones, providing high availability for resources. Integrated an Internet Gateway for public subnets and 2 NAT Gateways (one in each availability zone) to allow secure outbound internet access for instances in private subnets. Developed a Launch Template specifying instance configurations and created an Auto Scaling Group to manage EC2 deployment based on demand, ensuring automatic scalability. Deployed a Bastion Host in a public subnet to provide secure SSH access to EC2 instances in private subnets, utilizing SCP for secure key transfers. Configured an Application Load Balancer to distribute incoming traffic across multiple instances, enhancing load management, availability, and reliability of the application.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <h3>WordPress Deployment on AWS</h3>
                         <p>Tools: AWS (EC2, RDS, VPC, ALB, Security Groups), Linux, PHP, MySQL<br><br>
                             Successfully deployed a scalable and secure WordPress website on AWS, leveraging multiple AWS services, including EC2, RDS, and an Application Load Balancer. Started by creating an EC2 instance running Amazon Linux 2, where Apache, PHP, and MariaDB were installed. Set up an RDS instance to serve as the database for the WordPress installation, ensuring database performance and security. Configured WordPress by downloading the latest WordPress version and connecting it to the RDS database. An Application Load Balancer was implemented to distribute traffic, with EC2 security groups configured to allow only traffic from the Load Balancer, enhancing the security of the application. Additionally, transferred a custom domain to manage DNS routing and ensured SSL certification for encrypted connections.
                         </p>
